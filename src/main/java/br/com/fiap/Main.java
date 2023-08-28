@@ -23,17 +23,17 @@ public class Main {
 
         public void menu() {
 
-            int escolha = 0;
+            int menuPrincipal = 0;
 
             do {
 
-                escolha = Integer.parseInt(JOptionPane.showInputDialog("Escolha uma opção: \n " +
+                menuPrincipal = Integer.parseInt(JOptionPane.showInputDialog("Escolha uma opção: \n " +
                         "[1] - Adicionar uma nova música \n" +
                         "[2] - Achar música pelo ID \n" +
                         "[3] - Achar música pelo Nome \n" +
                         "[4] - Encerrar programa "));
 
-                switch (escolha){
+                switch (menuPrincipal){
                     case 1 -> {
                         Musica musica = addMusica();
                         JOptionPane.showMessageDialog(null, musica);
@@ -64,7 +64,7 @@ public class Main {
 
                 }
 
-            } while (escolha != 4);
+            } while (menuPrincipal != 4);
         }
 
         public Musica addMusica(){
