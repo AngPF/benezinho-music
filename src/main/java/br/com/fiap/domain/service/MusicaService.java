@@ -39,4 +39,7 @@ public class MusicaService implements Service<Musica, Long>{
             return null;
         }
     }
+
+    public boolean valido(String nome) {
+    }
 }

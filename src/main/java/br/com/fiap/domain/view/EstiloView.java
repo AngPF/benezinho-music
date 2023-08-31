@@ -16,7 +16,7 @@ public class EstiloView  implements View<Estilo, Long>{
     }
 
     @Override
-    public List<Estilo> findAll() {
+    public static List<Estilo> findAll() {
         return service.findAll();
     }
 

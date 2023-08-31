@@ -6,6 +6,7 @@ import br.com.fiap.domain.entity.Musica;
 import br.com.fiap.domain.repository.ArtistaRepository;
 import br.com.fiap.domain.repository.EstiloRepository;
 import br.com.fiap.domain.service.MusicaService;
+import br.com.fiap.domain.view.MenuView;
 
 import javax.swing.*;
 import java.util.ArrayList;
@@ -14,6 +15,9 @@ import java.util.Objects;
 
 public class Main {
     public static Musica main(String[] args) {
+
+        MenuView menu = MenuView();
+        menu.show();
 
         List<Artista> artistas = new ArrayList<>();
         List<Estilo> estilos = new ArrayList<>();

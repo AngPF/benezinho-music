@@ -52,7 +52,7 @@ public class ArtistaView implements View<Artista, Long>{
 
         Artista a = new Artista();
         a.setNome(nome);
-        a.setId(artista.getId());
+        if (Objects.nonNull(artista)) && Objects.nonNull((artista.getId()));
         return service.persist( a );
     }
 }
