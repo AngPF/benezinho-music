@@ -38,4 +38,7 @@ public class ArtistaService implements Service<Artista, Long> {
         }
 
     }
+
+    public boolean valido(String nome) {
+    }
 }
