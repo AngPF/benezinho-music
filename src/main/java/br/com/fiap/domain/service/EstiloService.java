@@ -37,4 +37,7 @@ public class EstiloService implements Service<Estilo,Long>{
             return null;
         }
     }
+
+    public boolean valido(String texto) {
+    }
 }
